@@ -1,9 +1,22 @@
 using System;
+using System.Collections.Generic;
 
-class Program
+namespace classes
 {
-    static void Main(string[] args)
+    class Program
     {
-        Console.WriteLine("Hello Develop03 World!");
+        static void Main(string[] args)
+            {
+            Console.Write("Please enter the name of the author of the verse: ");
+            string reference = Console.ReadLine();
+
+            Console.Write("Please write your Bible verse of the Day: ");
+            string text = Console.ReadLine();
+
+            Scripture scripture = new Scripture(reference, text);
+            Word game = new Word(scripture);
+            game.Play();
+        }
+
     }
 }
