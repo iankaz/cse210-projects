@@ -1,0 +1,3 @@
+Income,5000,income
+Expense,3000,expense
+Savings,2000
